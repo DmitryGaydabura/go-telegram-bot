@@ -1,0 +1,16 @@
+image:
+  registry: "ghcr.io"
+  repository: "dmitrygaydabura/go-telegram-bot"
+  tag: "v1.0.0" # Це значення буде змінювати CI/CD
+  os: "linux"
+  arch: "amd64"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+
+resources: {}
